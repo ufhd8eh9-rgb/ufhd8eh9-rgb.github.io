@@ -86,4 +86,109 @@ function openDemo(){document.getElementById('demoModal').classList.add('open');d
 function closeDemo(){document.getElementById('demoModal').classList.remove('open');document.body.style.overflow=''}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDemo()});
 </script>
+  
+<style>
+.products-section {
+  padding: 55px 5%;
+  background: #101010;
+  color: #fff;
+  font-family: Tahoma, sans-serif;
+}
+.products-section h2 {
+  color: #f5c400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.product-card {
+  max-width: 850px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: #1c1c1c;
+  border: 1px solid #51451b;
+  border-radius: 16px;
+  padding: 20px;
+}
+.product-image {
+  flex: 1;
+  min-width: 0;
+  background: #080808;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.product-image .qr-demo {
+  width: 145px;
+  height: 145px;
+  margin: auto;
+  background:
+    repeating-conic-gradient(#111 0% 25%, white 0% 50%)
+    0 0 / 18px 18px;
+  border: 9px solid white;
+}
+.product-info {
+  flex: 1;
+}
+.product-info h3 {
+  color: #f5c400;
+  font-size: 23px;
+}
+.product-info p {
+  color: #bbb;
+  line-height: 1.9;
+}
+.product-price {
+  color: #f5c400;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.product-order {
+  display: inline-block;
+  background: #f5c400;
+  color: #111;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+@media(max-width:600px) {
+  .product-card {
+    flex-direction: column;
+  }
+  .product-image {
+    width: 100%;
+  }
+  .product-info {
+    width: 100%;
+  }
+}
+</style>
+
+<section class="products-section" id="products">
+  <h2>منتجاتنا الرقمية</h2>
+
+  <div class="product-card">
+    <div class="product-image">
+      <div class="qr-demo"></div>
+      <p style="color:#f5c400">QR MENU</p>
+    </div>
+
+    <div class="product-info">
+      <h3>منيو إلكتروني QR</h3>
+      <p>
+        حوّل قائمة مطعمك إلى منيو إلكتروني
+        عصري، يستطيع الزبون فتحه عن طريق
+        مسح رمز QR من هاتفه.
+      </p>
+      <div class="product-price">السعر: حسب الطلب</div>
+      <a class="product-order"
+      href="https://wa.me/9647850290091?text=مرحبا،%20أريد%20طلب%20منيو%20QR"
+      target="_blank">
+        اطلب الآن عبر واتساب
+      </a>
+    </div>
+  </div>
+</section>
+
 </body></html>
