@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101010">
+<title>أثر ديجيتال | حلول رقمية للمطاعم</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--bg:#101010;--panel:#181818;--panel2:#202020;--yellow:#f5c400;--yellow2:#ffd84d;--white:#f7f5ef;--muted:#aaa69b;--line:#34312a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.8}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#101010eF;border-bottom:1px solid #ffffff12;backdrop-filter:blur(14px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:21px}.brand-mark{width:38px;height:38px;border:1px solid var(--yellow);border-radius:12px;display:grid;place-items:center;color:var(--yellow);font-size:21px}.brand small{display:block;color:var(--muted);font-size:10px;font-weight:500;line-height:1.2}.links{display:flex;gap:26px;color:#d4d0c6;font-size:14px}.links a:hover{color:var(--yellow)}.nav-cta,.btn{border:0;background:var(--yellow);color:#141414;font-weight:800;padding:11px 19px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--yellow2);transform:translateY(-2px)}.btn-outline{border:1px solid #71652f;color:var(--white);background:transparent}.btn-outline:hover{border-color:var(--yellow);color:var(--yellow);background:#f5c4000d}
+.hero{padding:84px 0 70px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#f5c4000b;filter:blur(8px);top:-180px;left:-120px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;position:relative}.eyebrow{color:var(--yellow);font-size:13px;font-weight:800;letter-spacing:.4px;display:flex;align-items:center;gap:9px}.eyebrow:before{content:"";width:25px;height:2px;background:var(--yellow)}h1{font-size:clamp(36px,5vw,62px);line-height:1.28;margin:17px 0 18px;font-weight:900;letter-spacing:-1px}h1 span{color:var(--yellow)}.lead{font-size:17px;color:#c0bcb2;max-width:580px;margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.micro{margin-top:24px;color:var(--muted);font-size:12px}.micro b{color:var(--yellow)}
+.visual{background:linear-gradient(145deg,#24221b,#151515 60%);border:1px solid #51451b;border-radius:20px;padding:24px;box-shadow:0 25px 80px #0009;position:relative}.visual-top{display:flex;align-items:center;justify-content:space-between;color:#bcb7a8;font-size:12px;margin-bottom:18px}.live{color:var(--yellow);display:flex;gap:7px;align-items:center}.live:before{content:"";width:7px;height:7px;background:var(--yellow);border-radius:50%;box-shadow:0 0 12px var(--yellow)}.phone{width:min(100%,330px);margin:auto;background:#090909;border:5px solid #353535;border-radius:32px;padding:12px;box-shadow:0 15px 40px #0008}.phone-head{height:17px;width:90px;background:#242424;border-radius:0 0 12px 12px;margin:-12px auto 12px}.menu-screen{background:#111;border-radius:20px;overflow:hidden}.food-hero{height:118px;background:linear-gradient(0deg,#000b,#0002),url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80') center/cover;display:flex;align-items:end;padding:14px}.food-hero strong{font-size:19px}.menu-info{padding:12px}.menu-brand{color:var(--yellow);font-weight:900;font-size:14px}.chips{display:flex;gap:6px;margin:12px 0;flex-wrap:wrap}.chip{font-size:10px;border:1px solid #51451b;border-radius:20px;padding:3px 9px;color:#e9d98d}.dish{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #302d25;padding:9px 0;font-size:11px}.dish b{color:var(--yellow);font-size:12px}.dish small{display:block;color:#aaa;font-size:9px}.visual-note{position:absolute;bottom:18px;left:18px;background:var(--yellow);color:#171717;padding:8px 12px;border-radius:8px;font-size:11px;font-weight:900;transform:rotate(-4deg)}
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;text-align:center}.stats strong{display:block;color:var(--yellow);font-size:18px}.stats span{font-size:12px;color:var(--muted)}
+section{padding:76px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.section-head .eyebrow{justify-content:center}.section-head .eyebrow:before{display:none}h2{font-size:clamp(27px,3.5vw,40px);line-height:1.35;margin:10px 0 12px;font-weight:900}.section-head p{color:var(--muted);margin:0}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{background:var(--panel);border:1px solid #ffffff12;border-radius:14px;padding:23px;transition:.2s}.feature:hover{border-color:#8b741d;transform:translateY(-4px)}.ico{width:45px;height:45px;border-radius:12px;background:#f5c40016;color:var(--yellow);display:grid;place-items:center;font-size:22px;margin-bottom:13px}.feature h3{font-size:17px;margin:0 0 7px}.feature p{font-size:13px;color:var(--muted);margin:0}
+.demo{background:linear-gradient(130deg,#1b1a16,#111);border-block:1px solid #3b341b}.demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.demo-copy p{color:var(--muted)}.demo-list{list-style:none;padding:0;margin:20px 0}.demo-list li{padding:7px 0;color:#ded9cc;font-size:14px}.demo-list li:before{content:"✓";color:var(--yellow);font-weight:900;margin-left:10px}.demo-card{background:#0b0b0b;border:1px solid #55481a;border-radius:16px;padding:20px;text-align:center}.qr-art{width:170px;height:170px;background:white;margin:0 auto 14px;border-radius:10px;padding:10px;display:grid;grid-template-columns:repeat(9,1fr);gap:3px}.qr-art i{background:#111;border-radius:1px}.qr-art i:nth-child(3n),.qr-art i:nth-child(7n+1){background:white}.qr-art i:nth-child(4n+2){background:#111}.demo-card strong{display:block;color:var(--yellow)}.demo-card small{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:22px;border-right:2px solid var(--yellow);background:#171717;border-radius:10px}.step em{font-style:normal;color:var(--yellow);font-size:13px;font-weight:900}.step h3{margin:5px 0;font-size:17px}.step p{color:var(--muted);font-size:13px;margin:0}
+.contact{padding:0 0 80px}.contact-box{background:var(--yellow);color:#151515;border-radius:18px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-box h2{margin:0 0 5px}.contact-box p{margin:0;color:#51430c;font-size:14px}.contact-box .btn{background:#151515;color:var(--yellow);white-space:nowrap}.contact-box .btn:hover{background:#2a2a2a}
+footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.modal{display:none;position:fixed;inset:0;background:#000c;z-index:50;padding:20px;align-items:center;justify-content:center}.modal.open{display:flex}.modal-box{width:min(440px,100%);background:#171717;border:1px solid #55481a;border-radius:16px;padding:22px;max-height:90vh;overflow:auto}.modal-head{display:flex;justify-content:space-between;align-items:center}.close{border:0;background:#292929;color:white;border-radius:8px;width:34px;height:34px}.modal-box h3{margin:4px 0;color:var(--yellow)}.modal-box p{color:var(--muted);font-size:13px}.modal-item{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid #34312a;font-size:13px}.modal-item b{color:var(--yellow)}.note{font-size:11px!important;color:#888!important}
+@media(max-width:800px){.links{display:none}.hero{padding:55px 0}.hero-grid,.demo-grid{grid-template-columns:1fr;gap:35px}.hero-grid{gap:35px}.visual{max-width:500px;margin:auto}.feature-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.contact-box{align-items:flex-start;flex-direction:column}.stats-grid{grid-template-columns:1fr 1fr}.stats-grid div:last-child{grid-column:1/-1}}
+@media(max-width:480px){.feature-grid{grid-template-columns:1fr}.nav-cta{padding:9px 12px;font-size:12px}.brand{font-size:18px}.hero .lead{font-size:15px}.visual{padding:15px}.contact-box{padding:25px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">أ</span><span>أثر ديجيتال<small>DIGITAL SOLUTIONS</small></span></a>
+  <nav class="links"><a href="#services">الخدمات</a><a href="#project">مشروعنا الأول</a><a href="#how">طريقة العمل</a><a href="#contact">تواصل</a></nav>
+  <a class="nav-cta" href="#contact">اطلب خدمتك <span>←</span></a>
+</div></header>
+<main id="home">
+<section class="hero"><div class="wrap hero-grid">
+  <div><div class="eyebrow">حلول رقمية للمشاريع الطموحة</div>
+    <h1>نحوّل فكرتك إلى <span>تجربة رقمية</span> تليق بعملائك.</h1>
+    <p class="lead">نصمم حلولاً رقمية عصرية تساعد المطاعم والمتاجر على عرض خدماتها بطريقة أسهل وأجمل — من المنيو الإلكتروني إلى صفحات الويب والتصاميم الإعلانية.</p>
+    <div class="actions"><a class="btn" href="#project">اكتشف مشروعنا الأول <span>←</span></a><a class="btn btn-outline" href="#contact">تواصل ويانا</a></div>
+    <div class="micro">تصميم أنيق • استخدام سهل • مناسب للموبايل</div>
+  </div>
+  <div class="visual"><div class="visual-top"><span>نموذج المنيو الإلكتروني</span><span class="live">عرض تجريبي</span></div>
+    <div class="phone"><div class="phone-head"></div><div class="menu-screen">
+      <div class="food-hero"><strong>مذاق يستحق التجربة</strong></div>
+      <div class="menu-info"><div class="menu-brand">مطعم الذوق الأصيل</div><div class="chips"><span class="chip">المشاوي</span><span class="chip">المقبلات</span><span class="chip">المشروبات</span></div>
+        <div class="dish"><span>كباب عراقي<small>لحم طازج • يقدم مع الخبز</small></span><b>١٢,٠٠٠ د.ع</b></div>
+        <div class="dish"><span>دجاج مشوي<small>تتبيلة خاصة</small></span><b>١٠,٠٠٠ د.ع</b></div>
+        <div class="dish"><span>سلطة موسمية<small>خضروات طازجة</small></span><b>٣,٠٠٠ د.ع</b></div>
+      </div>
+    </div></div><div class="visual-note">منيوك… بلمسة واحدة</div>
+  </div>
+</div></section>
+<div class="stats"><div class="wrap stats-grid"><div><strong>QR Code</strong><span>دخول سريع للمنيو</span></div><div><strong>Mobile First</strong><span>مصمم لشاشة الهاتف</span></div><div><strong>تحديث مرن</strong><span>تعديل الأسعار والأصناف</span></div></div></div>
+<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">شنو نقدم؟</div><h2>خدمات رقمية تخلي مشروعك أوضح</h2><p>نساعدك تعرض منتجاتك وخدماتك بصورة مرتبة وسهلة لعملائك.</p></div>
+<div class="feature-grid">
+  <article class="feature"><div class="ico">▦</div><h3>منيو إلكتروني QR</h3><p>قائمة طعام رقمية تعرض الأصناف والصور والأسعار من خلال مسح الرمز.</p></article>
+  <article class="feature"><div class="ico">✦</div><h3>تصميم إعلانات</h3><p>بوسترات وعروض وستوريات بهوية بصرية مرتبة تناسب نشاطك.</p></article>
+  <article class="feature"><div class="ico">⌘</div><h3>صفحات ويب</h3><p>صفحات تعريفية لعرض نشاطك ومنتجاتك ومعلومات التواصل.</p></article>
+  <article class="feature"><div class="ico">◎</div><h3>رموز QR مخصصة</h3><p>رمز خاص يربط الزبون بالمنيو أو صفحة منتجاتك أو حساباتك.</p></article>
+  <article class="feature"><div class="ico">▤</div><h3>كتالوج منتجات</h3><p>عرض منظم للمنتجات مع الصور والتفاصيل والأسعار.</p></article>
+  <article class="feature"><div class="ico">◈</div><h3>إدارة محتوى</h3><p>تنظيم أفكار المنشورات وكتابة محتوى مناسب لحسابات مشروعك.</p></article>
+</div></div></section>
+<section class="demo" id="project"><div class="wrap demo-grid">
+  <div class="demo-copy"><div class="eyebrow">المشروع الأول</div><h2>منيو المطعم… صار بجيب زبونك</h2>
+    <p>بدل المنيو الورقي، خلي زبونك يمسح رمز QR الموجود على الطاولة أو يم الكاشير، وتظهر له قائمة الطعام على هاتفه مباشرة.</p>
+    <ul class="demo-list"><li>صور الوجبات وأسماؤها</li><li>الأسعار والأقسام والعروض</li><li>معلومات السعرات الحرارية عند توفر بيانات موثوقة</li><li>يعمل من متصفح الهاتف دون تنزيل تطبيق</li></ul>
+    <button class="btn" onclick="openDemo()">جرّب المنيو التجريبي <span>←</span></button>
+  </div>
+  <div class="demo-card"><div class="qr-art" aria-label="رسم توضيحي لرمز QR غير قابل للمسح" id="qr"></div><strong>امسح الرمز — وشاهد المنيو</strong><small>هذا نموذج بصري توضيحي؛ يتم إنشاء QR حقيقي عند ربط صفحة المطعم برابطها.</small></div>
+</div></section>
+<section id="how"><div class="wrap"><div class="section-head"><div class="eyebrow">بكل بساطة</div><h2>شلون نجهز منيو مطعمك؟</h2><p>خطوات واضحة من أول تواصل إلى تسليم المنيو.</p></div>
+<div class="steps"><article class="step"><em>الخطوة 01</em><h3>ترسل تفاصيل مطعمك</h3><p>الاسم والشعار والأصناف والصور والأسعار.</p></article><article class="step"><em>الخطوة 02</em><h3>نصمم المنيو</h3><p>نرتب الأقسام والوجبات بتصميم يناسب هوية مطعمك.</p></article><article class="step"><em>الخطوة 03</em><h3>تستلم رابط وQR</h3><p>تستخدم الرمز على الطاولات أو عند الكاشير بعد اختباره.</p></article></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box"><div><h2>جاهز تطوّر طريقة عرض مشروعك؟</h2><p>خل نبدأ بنموذج يناسب مطعمك أو متجرك.</p></div><a class="btn" href="https://wa.me/9647850290091?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D9%8A%D9%88%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A" target="_blank" rel="noopener">راسلنا على واتساب ←</a></div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> أثر ديجيتال — جميع الحقوق محفوظة</span><span>تصميم رقمي بهوية سوداء وصفراء</span></div></footer>
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="if(event.target===this)closeDemo()"><div class="modal-box"><div class="modal-head"><h3 id="modalTitle">منيو مطعم الذوق الأصيل</h3><button class="close" onclick="closeDemo()" aria-label="إغلاق">×</button></div><p>نموذج تجريبي — الأسعار والأصناف افتراضية.</p><div class="chips"><span class="chip">المشاوي</span><span class="chip">المقبلات</span><span class="chip">المشروبات</span></div>
+<div class="modal-item"><span>كباب عراقي<small class="note">لحم مشوي مع الخبز</small></span><b>١٢,٠٠٠ د.ع</b></div>
+<div class="modal-item"><span>دجاج مشوي<small class="note">مع الرز والسلطة</small></span><b>١٠,٠٠٠ د.ع</b></div>
+<div class="modal-item"><span>سلطة موسمية<small class="note">خضروات طازجة</small></span><b>٣,٠٠٠ د.ع</b></div>
+<div class="modal-item"><span>ماء معدني<small class="note">قنينة</small></span><b>٥٠٠ د.ع</b></div>
+<p class="note">السعرات الحرارية لا تُعرض في هذا النموذج لأنها تحتاج بيانات غذائية مؤكدة من المطعم.</p></div></div>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const qr=document.getElementById('qr');let seed=29;for(let i=0;i<81;i++){seed=(seed*9301+49297)%233280;const cell=document.createElement('i');if(seed/233280>.48)cell.style.background='#111';qr.appendChild(cell)}
+function openDemo(){document.getElementById('demoModal').classList.add('open');document.body.style.overflow='hidden'}
+function closeDemo(){document.getElementById('demoModal').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDemo()});
+</script>
+</body></html>
